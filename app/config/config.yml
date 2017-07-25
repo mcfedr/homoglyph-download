@@ -4,7 +4,7 @@ imports:
 
 parameters:
     locale: en
-    default_url: 'http://homoglyphs.net/?text=abcdefghijklmnopqrstuvwxyz&lang=en&exc7=1&exc8=1&exc13=1&exc14=1'
+    default_url: 'http://homoglyphs.net/?lang=en&exc7=1&exc8=1&exc13=1&exc14=1'
 
 framework:
     secret: '%secret%'
