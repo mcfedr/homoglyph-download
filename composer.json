@@ -21,6 +21,7 @@
     },
     "require": {
         "php": ">=7.1",
+        "friendsofphp/php-cs-fixer": "^2.4",
         "guzzlehttp/guzzle": "^6.3",
         "incenteev/composer-parameter-handler": "^2.0",
         "sensio/distribution-bundle": "^5.0.19",

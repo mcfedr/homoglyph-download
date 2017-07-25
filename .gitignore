@@ -9,3 +9,4 @@
 !var/logs/.gitkeep
 !var/SymfonyRequirements.php
 /vendor/
+/.php_cs.cache

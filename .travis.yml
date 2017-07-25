@@ -1,0 +1,11 @@
+sudo: false
+language: php
+php:
+    - 7.1
+
+before_script:
+    - composer install
+
+script:
+    - ./vendor/bin/php-cs-fixer fix --dry-run --diff
+    - ./vendor/bin/phpunit

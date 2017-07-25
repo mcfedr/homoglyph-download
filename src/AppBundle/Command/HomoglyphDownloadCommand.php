@@ -1,8 +1,6 @@
 <?php
 
-
 namespace AppBundle\Command;
-
 
 use GuzzleHttp\Client;
 use Symfony\Component\Console\Command\Command;
@@ -57,7 +55,7 @@ class HomoglyphDownloadCommand extends Command
             }
             $node->filter('.char,.charright')->each(function (Crawler $node, $i) use ($letter, &$replacements) {
                 $text = $node->text();
-                $text = str_replace(chr(194).chr(160), "", $text);
+                $text = str_replace(chr(194).chr(160), '', $text);
                 if ($text) {
                     $replacements[$text] = $letter;
                 }
