@@ -45,7 +45,7 @@ class HomoglyphDownloadCommand extends Command
         $crawler->addContent($content, $response->getHeaderLine('content-type'));
 
         $replacements = [];
-        $letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-$';
+        $letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_';
 
         $rows = $crawler->filter('#Rangestable .hglistod,.hglistev');
         $rows->each(function (Crawler $node, $i) use (&$replacements, $letters) {
